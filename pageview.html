@@ -33,9 +33,8 @@ twq('config','obs9x', {
 </script>
 <!-- End Twitter conversion tracking event code -->
 <script>
-    window.dataLayer = window.dataLayer || [];
-</script>
-<a href="#" onclick="dataLayer.push({
+    var dataLayer = window.dataLayer || [];
+    dataLayer.push({
   'items':[
     {
       'bookCategory': 'fiction1',
@@ -53,7 +52,8 @@ twq('config','obs9x', {
       'bookAuthor': 'Gabriel García Márquez3'
     }
   ]
-});">Book details</a>
+});
+</script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
